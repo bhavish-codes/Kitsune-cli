@@ -14,17 +14,13 @@ class Help {
     "fortune",
     "vanish",
   ];
-  implimentedCommands = ["speak"];
+  implimentedCommands = ["speak","spirit"];
   kitsune = `
         /\\_/\\
       =( °w° )=
-        )   (  //
-       (__ __)//
-      /  | |  \\
-     (   | |   )
-      \\  |_|  /
-       \\_____/
-`;
+        )   ( 
+       (__ __)
+    `;
   constructor(program) {
     this.program = program;
   }

@@ -4,17 +4,11 @@ import ora from "ora";
 import gradient from "gradient-string";
 class Speak{
     kitsune = `
-          /\\_/\\
-        =( °w° )=
-          )   (  //
-         (__ __)//
-        /  | |  \\
-       (   | |   )
-        \\  |_|  /
-         \\_____/
-
-        🦊 Kitsune Spirit
-`;
+        /\\_/\\
+      =( °w° )=
+        )   ( 
+       (__ __)
+    `;
     program;
     constructor(program){
         this.program = program;
