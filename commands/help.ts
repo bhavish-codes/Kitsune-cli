@@ -14,7 +14,7 @@ class Help {
     "fortune",
     "vanish",
   ];
-  implimentedCommands = ["speak","spirit"];
+  implimentedCommands = ["speak", "spirit"];
   kitsune = `
         /\\_/\\
       =( °w° )=
