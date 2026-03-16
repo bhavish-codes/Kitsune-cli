@@ -84,18 +84,33 @@ Summon the mystical help menu for detailed information about a specific command.
 kit help speak
 ```
 
+### 4. Loud
+Make the Kitsune shout your message across the digital realm, using large text.
+
+```bash
+kit loud "Wake up!"
+# Or to hear the spirit speak loud:
+kit loud "Wake up!" speak
+```
+
+### 5. Riddle
+The cunning fox presents a puzzle for your mind. You can provide a timer in seconds.
+
+```bash
+kit riddle 30
+```
+
 ---
 
 ##  Roadmap (In Development)
 
 The Kitsune is still learning new tricks. The following commands are currently being forged in the spirit realm:
 
-- [ ] `riddle` - The fox tests your wits.
 - [ ] `joke` - A touch of kitsune mischief.
 - [ ] `fortune` - Look into the mystical future.
 - [ ] `weather` - Read the winds and skies.
 - [ ] `vanish` - The spirit disappears without a trace.
-- [ ] `loud` / `whisper` - Modulate the spirit's voice.
+- [ ] `whisper` - The spirit whispers to you.
 
 ##  Built With
 
