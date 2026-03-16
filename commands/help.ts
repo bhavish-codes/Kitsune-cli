@@ -30,40 +30,43 @@ class Help {
   commandHelpData: Record<string, CommandHelp> = {
     speak: {
       title: "🦊  Kitsune Speak Command",
-      summary: "The Kitsune spirit listens to your words and speaks them aloud.",
+      summary: "Have the Kitsune channel ancient wisdom and speak your words aloud.",
       usage: "kitsune speak <message>",
-      description: "Invoke the fox spirit to vocalize a message through your terminal.\n  Kitsune will whisper the message using mystical speech.",
+      description: "Invoke the fox spirit to vocalize a message through your terminal.\nThe spirit uses TTS (Text-to-Speech) to clearly enunciate your thoughts.",
       examples: [
-        'kitsune speak "Hello traveler"',
-        'kitsune speak "Build completed successfully"',
-        'kitsune speak "Your tests have passed"',
+        'kit speak "Hello traveler"',
+        'kit speak "Build completed successfully"',
+        'kit speak "The spiritual realm awaits"',
       ],
     },
     spirit: {
       title: "🦊  Kitsune Spirit Command",
-      summary: "Summon the Kitsune spirit.",
-      usage: "kitsune spirit",
-      description: "Calls upon the fox spirit to guide your terminal journey.",
+      summary: "Summon the Kitsune spirit to receive quotes of philosophy and truth.",
+      usage: "kitsune spirit [speak]",
+      description: "Calls upon the fox spirit to guide your terminal journey with timeless wisdom.\nPass the optional `speak` argument to hear the spirit read the quote aloud.",
       examples: [
-        "kitsune spirit"
+        "kit spirit",
+        "kit spirit speak"
       ],
     },
     loud: {
       title: "🦊  Kitsune Loud Command",
-      summary: "The Kitsune spirit speaks loudly.",
-      usage: "kitsune loud <message>",
-      description: "Make the Kitsune shout your message across the digital realm.",
+      summary: "Make the Kitsune shout your message across the digital realm.",
+      usage: "kitsune loud <text> [speak]",
+      description: "Proclaim a grand message with large, shadow-styled ASCII text.\nPass the optional `speak` argument to have the spirit announce it out loud.",
       examples: [
-        'kitsune loud "Wake up!"',
+        'kit loud "Wake up!"',
+        'kit loud "Tests Passing!" speak',
       ],
     },
     riddle: {
       title: "🦊  Kitsune Riddle Command",
       summary: "The Kitsune spirit shares a mysterious riddle.",
-      usage: "kitsune riddle",
-      description: "Bored? Let the cunning fox present a puzzle for your mind.",
+      usage: "kitsune riddle <timer>",
+      description: "The cunning fox tests your wits by presenting a riddle.\nYou have the given time (in seconds) to contemplate the answer.",
       examples: [
-        "kitsune riddle"
+        "kit riddle 30",
+        "kit riddle 60"
       ],
     }
   };
