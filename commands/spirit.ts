@@ -22,26 +22,42 @@ class Spirit {
         spinner: "dots",
       }).start();
       const categories = [
-      "wisdom","philosophy","life","truth","inspirational",
-      "relationships","love","faith","humor","success",
-      "courage","happiness","art","writing","fear",
-      "nature","time","freedom","death","leadership"
-    ];
+        "wisdom",
+        "philosophy",
+        "life",
+        "truth",
+        "inspirational",
+        "relationships",
+        "love",
+        "faith",
+        "humor",
+        "success",
+        "courage",
+        "happiness",
+        "art",
+        "writing",
+        "fear",
+        "nature",
+        "time",
+        "freedom",
+        "death",
+        "leadership",
+      ];
 
-    const shuffled = [...categories].sort(() => 0.5 - Math.random());
-    const count = Math.floor(Math.random() * 3) + 1;
-    const selected = shuffled.slice(0, count);
+      const shuffled = [...categories].sort(() => 0.5 - Math.random());
+      const count = Math.floor(Math.random() * 3) + 1;
+      const selected = shuffled.slice(0, count);
 
-    const categoryParam = encodeURIComponent(selected.join(","));
+      const categoryParam = encodeURIComponent(selected.join(","));
 
-    const res = await fetch(
-      `https://api.api-ninjas.com/v2/quotes?categories=${categoryParam}`,
-      {
-        headers: {
-          "X-Api-Key": process.env.API_NINJAS_KEY
-        }
-      }
-    );
+      const res = await fetch(
+        `https://api.api-ninjas.com/v2/quotes?categories=${categoryParam}`,
+        {
+          headers: {
+            "X-Api-Key": process.env.API_NINJAS_KEY,
+          },
+        },
+      );
 
       const data = await res.json();
       spinner.stop();
